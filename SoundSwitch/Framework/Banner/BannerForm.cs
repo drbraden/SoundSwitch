@@ -43,10 +43,11 @@ namespace SoundSwitch.Framework.Banner
             InitializeComponent();
             var screen = AppModel.Instance.NotifyUsingPrimaryScreen ? Screen.PrimaryScreen : Screen.FromPoint(Cursor.Position);
             StartPosition = FormStartPosition.Manual;
-            Bounds = screen.Bounds;
+            // Bounds = screen.Bounds;
             TopMost = true;
 
-            Location = new Point(screen.Bounds.X + 50, screen.Bounds.Y + 60);
+            // Location = new Point(screen.Bounds.X + 50, screen.Bounds.Y + 60);
+            Location = new Point(1200, 50);
         }
 
         protected override bool ShowWithoutActivation => true;
@@ -99,10 +100,10 @@ namespace SoundSwitch.Framework.Banner
             }
 
             _hiding = false;
-            Opacity = .8;
+            Opacity = .95;
             lblTop.Text = data.Title;
             lblTitle.Text = data.Text;
-            Region = Region.FromHrgn(RoundedCorner.CreateRoundRectRgn(0, 0, Width, Height , 20, 20));
+            Region = Region.FromHrgn(RoundedCorner.CreateRoundRectRgn(0, 0, Width, Height , 8, 8));
 
             _timerHide.Enabled = true;
 
@@ -167,7 +168,7 @@ namespace SoundSwitch.Framework.Banner
         {
             while (Opacity > 0.0)
             {
-                await Task.Delay(50);
+                await Task.Delay(5);
 
                 if (!_hiding)
                     break;
