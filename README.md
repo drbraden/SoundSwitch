@@ -4,6 +4,22 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+# Personal Fork
+
+TLDR: Use the author's original code (https://github.com/Belphemur/SoundSwitch/) and support his work.  As someone that doesn't do .NET or use Visual Studio, I really appreciate the code base and how easy it was to hit the ground running from a clean environment.  Much appreciated, many kudos :)
+
+Apart from installing Microsoft Visual Studio 2022, all I had to do to get started was to also install the Windows SDK from https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/.  This was probably an option I missed during the Visual Studio 2022 install.
+
+This fork was created in order to move the notification banner to the upper-right hand corner of my monitor (instead of upper-left).  This was done as a quick hack for personal preferences.  Therefore, note the following:
+
+1. It doesn't properly support multiple monitors
+2. The spacing is hard-coded based on the resolution of my current monitor
+3. Opacity level of notification banner increased to improve visibility
+4. Notification banner background and text colors changed to black on BlachedAlmond
+5. Radius of rounded corners decreased
+
+
 **SoundSwitch** offers you the opportunity to switch your playback and recording devices using simple **hotkeys**.
 
 **No more** navigating througth several menus and screens. Just configure SoundSwitch **once** and you are able to switch between your devices as fast as never before!
