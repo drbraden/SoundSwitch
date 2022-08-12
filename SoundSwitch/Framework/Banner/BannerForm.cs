@@ -47,7 +47,7 @@ namespace SoundSwitch.Framework.Banner
             TopMost = true;
 
             // Location = new Point(screen.Bounds.X + 50, screen.Bounds.Y + 60);
-            Location = new Point(1200, 50);
+            Location = new Point(1285,15);
         }
 
         protected override bool ShowWithoutActivation => true;
